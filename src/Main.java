@@ -2,14 +2,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        double studentGPA = 3.45;
-        String studentFirstName = "Ishan";
-        String studentLastName = "Madhawa";
-        System.out.println("Student Full Name:-"+studentFirstName+" "+studentLastName+" has a GPA of "+studentGPA);
-        System.out.println("What do you want to update it to?");
-        Scanner input = new Scanner(System.in);
-        studentGPA = input.nextDouble();
-        System.out.println("Student Full Name:-"+studentFirstName+" "+studentLastName+" has a GPA of(Updated):-"+studentGPA);
+        System.out.println("Pick a number between 1 and 10");
+        Scanner scanner = new Scanner(System.in);
+        int inputNum = scanner.nextInt();
+        if(inputNum<5){
+           System.out.println("Enjoy good luck brings you!");
+        }else{
+            System.out.println("Your shoe selection will make you very happy today");
+        }
 
     }
 }
